@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>File Splitter build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>17-10-2014 at 19:07.11</u><br />
+Build ended on: <u>17-10-2014 at 19:07.12</u><p />
+<b>-------------- Build: Debug in File Splitter (compiler: GNU GCC Compiler)---------------</b><br />
+mingw32-g++.exe -Wall -fexceptions  -g  -Wshadow -Winit-self -Wredundant-decls -Wundef -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-default -Weffc++ -Wmain -std=c++11 -Wextra -Wall -g    -c "X:\C++\[Lib] GNB\File Splitter\FileSplitter.cpp" -o debug\FileSplitter.o<br />
+X:\C++\[Lib] GNB\File Splitter\FileSplitter.cpp: In function 'bool GNB::FileSplitter::Join(std::string, std::vector&lt;std::basic_string&lt;char&gt; &gt;)':<br />
+<font color="#0000ff">X:\C++\[Lib] GNB\File Splitter\FileSplitter.cpp:81:76: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]</font><br />
+      size_t fileSegmentSize = fFileSegment.tellg()-sizeof(FileSegmentHeader);<br />
+                                                                            ^<br />
+In file included from d:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iosfwd:40:0,<br />
+                 from d:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:38,<br />
+                 from d:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ostream:38,<br />
+                 from d:\mingw\lib\gcc\mingw32\4.8.1\include\c++\iostream:39,<br />
+                 from X:\C++\[Lib] GNB\File Splitter\FileSplitter.hpp:4,<br />
+                 from X:\C++\[Lib] GNB\File Splitter\FileSplitter.cpp:1:<br />
+d:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\postypes.h:192:7: note: candidate 1: std::fpos&lt;_StateT&gt; std::fpos&lt;_StateT&gt;::operator-(std::streamoff) const [with _StateT = int; std::streamoff = long long int]<br />
+       operator-(streamoff __off) const<br />
+       ^<br />
+X:\C++\[Lib] GNB\File Splitter\FileSplitter.cpp:81:76: note: candidate 2: operator-(std::streamoff {aka long long int}, unsigned int) &lt;built-in&gt;<br />
+      size_t fileSegmentSize = fFileSegment.tellg()-sizeof(FileSegmentHeader);<br />
+                                                                            ^<br />
+mingw32-g++.exe -Wall -fexceptions  -g  -Wshadow -Winit-self -Wredundant-decls -Wundef -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-default -Weffc++ -Wmain -std=c++11 -Wextra -Wall -g    -c "X:\C++\[Lib] GNB\File Splitter\main.cpp" -o debug\main.o<br />
+mingw32-g++.exe  -o "debug\File Splitter.exe" debug\FileSplitter.o debug\main.o debug\sha256.o<br />
+Output size is 358.19 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 1 seconds)</font><br />
+<font color="#0000ff">0 errors, 1 warnings (0 minutes, 1 seconds)</font><br />
+</tt>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1413509235 source:x:\c++\[lib] gnb\file splitter\main.cpp
+	<iostream>
+	<vector>
+	"FileSplitter.hpp"
+
+1412785082 x:\c++\[lib] gnb\file splitter\sha256.h
+	<string>
+	<stdint.h>
+
+1412787132 source:x:\c++\[lib] gnb\file splitter\sha256.cpp
+	"sha256.h"
+
+1413509171 source:x:\c++\[lib] gnb\file splitter\filesplitter.cpp
+	"FileSplitter.hpp"
+
+1413569222 x:\c++\[lib] gnb\file splitter\filesplitter.hpp
+	<iostream>
+	<map>
+	<vector>
+	<fstream>
+	<cstring>
+	"sha256.h"
+	"../utils/utils.hpp"
+
+1413569177 x:\c++\[lib] gnb\utils\utils.hpp
+	<sstream>
+
